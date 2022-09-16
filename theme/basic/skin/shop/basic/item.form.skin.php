@@ -307,7 +307,7 @@ add_stylesheet('<link rel="stylesheet" href="'.G5_SHOP_CSS_URL.'/style.css">', 0
 	            <?php } ?>
 	            <a href="javascript:item_wish(document.fitem, '<?php echo $it['it_id']; ?>');" class="sit_btn_wish"><i class="fa fa-heart-o" aria-hidden="true"></i><span class="sound_only">위시리스트</span></a>
 	            	
-	            <?php if(!$is_orderable && $it['it_soldout'] && $it['it_stock_sms']) { ?>
+	            <?php if(!$is_orderable && $it['it_stock_sms']) { ?>
 	            <a href="javascript:popup_stocksms('<?php echo $it['it_id']; ?>');" id="sit_btn_alm">재입고알림</a>
 	            <?php } ?>
 	            <?php if ($naverpay_button_js) { ?>

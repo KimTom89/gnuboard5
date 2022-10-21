@@ -71,6 +71,11 @@ define('G5_CART_STOCK_LIMIT', 3);
 // 코인 잔액이 설정 금액보다 작을 때는 주문시 SMS 발송 안함
 define('G5_ICODE_COIN', 100);
 
+// 화폐단위
+define('G5_SHOP_MONETARY_UNIT', '원');
+// 포인트단위
+define('G5_SHOP_POINT_UNIT', '점');
+
 include_once(G5_LIB_PATH.'/shop.uri.lib.php');
 
 add_replace('get_pretty_url', 'add_pretty_shop_url', 10, 5);
